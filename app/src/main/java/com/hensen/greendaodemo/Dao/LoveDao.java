@@ -12,7 +12,7 @@ import java.util.List;
 public class LoveDao {
 
     /**
-     * 添加数据，如果有重复则覆盖
+     * 添加数据
      *
      * @param shop
      */
@@ -46,12 +46,4 @@ public class LoveDao {
     public static List<Shop> queryLove() {
         return BaseApplication.getDaoInstant().getShopDao().queryBuilder().where(ShopDao.Properties.Type.eq(Shop.TYPE_LOVE)).list();
     }
-
-    /**
-     * 查询全部数据
-     */
-    public static List<Shop> queryAll() {
-        return BaseApplication.getDaoInstant().getShopDao().loadAll();
-    }
-
 }

@@ -63,9 +63,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void deleteDate() {
-        LoveDao.deleteLove(shops.get(0).getId());
-
-        queryDate();
+        if (!shops.isEmpty()) {
+            LoveDao.deleteLove(shops.get(0).getId());
+            queryDate();
+        }
     }
 
     private void queryDate() {
@@ -84,15 +85,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         shop.setSell_num(15263);
         shop.setName("正宗梅菜扣肉 聪厨梅干菜扣肉 家宴常备方便菜虎皮红烧肉 2盒包邮" + i++);
         LoveDao.insertLove(shop);
-
         queryDate();
     }
 
     private void updateDate() {
-        Shop shop = shops.get(0);
-        shop.setName("我是修改的名字");
-        LoveDao.updateLove(shop);
-
-        queryDate();
+        if (!shops.isEmpty()) {
+            Shop shop = shops.get(0);
+            shop.setName("我是修改的名字");
+            LoveDao.updateLove(shop);
+            queryDate();
+        }
     }
 }

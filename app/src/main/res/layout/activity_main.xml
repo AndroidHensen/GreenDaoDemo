@@ -3,8 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".Activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用GreenDao3.2购物车Demo"
+        android:textColor="#333"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="作者：Hensen_"
+        android:textColor="#888"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="CSDN博客地址：http://blog.csdn.net/qq_30379689"
+        android:textColor="#888"
+        android:textSize="14dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
