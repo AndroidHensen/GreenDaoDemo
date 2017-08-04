@@ -1,10 +1,11 @@
 # GreenDaoDemo
 GreenDao3.2的使用，仿购物车Demo
 
-##效果图
-!()[https://github.com/AndroidHensen/GreenDaoDemo/blob/master/app/src/main/res/drawable/preview.png]
+## 效果图
 
-##主要API
+![](https://github.com/AndroidHensen/GreenDaoDemo/blob/master/app/src/main/res/drawable/preview.png)
+
+## 主要API
 
 ```
 public class LoveDao {
@@ -47,6 +48,6 @@ public class LoveDao {
 }
 ```
 
-##原文地址
+## 原文地址
 
 CSDN博客：http://blog.csdn.net/qq_30379689/article/details/54410838
